@@ -1,0 +1,39 @@
+Emotion Detection using VGG16
+
+This project demonstrates real-time emotion detection using a VGG16-based model pre-trained on ImageNet. The model predicts emotions (Angry, Happy, Sad) from the input frames captured by the camera.
+
+Prerequisites
+- Python 3
+- OpenCV (`cv2`)
+- NumPy
+- TensorFlow
+
+Installation
+1. Install the required packages:
+   ```bash
+   pip install opencv-python numpy tensorflow
+   ```
+
+2. Download the VGG16 model weights and place them in the project directory.
+   - VGG16 weights: [VGG16](https://keras.io/api/applications/vgg/#vgg16)
+
+3. Download the pre-trained weights for the emotion detection model (`path_to_emotion_weights.h5`) and place them in the project directory.
+
+Usage
+Run the `emotion_detection.py` script to start the real-time emotion detection using your computer's camera.
+```bash
+python emotion_detection.py
+```
+
+Press 'q' to exit the application.
+
+Project Structure
+- `emotion_detection.py`: Main script for real-time emotion detection.
+- `path_to_emotion_weights.h5`: Pre-trained weights for the emotion detection model.
+- `README.md`: Project documentation.
+
+Acknowledgments
+- VGG16 model pre-trained on ImageNet: [Keras Applications](https://keras.io/api/applications/vgg/#vgg16)
+
+License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
